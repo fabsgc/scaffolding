@@ -1,0 +1,1 @@
+<gc:extends file=".vendor/gcsystem/scaffolding/src/template/main"/>
