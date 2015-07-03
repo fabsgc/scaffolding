@@ -12,7 +12,7 @@ Installation :
 
 * In composer add
 
-```text
+```json
 "autoload": {
 	"psr-4": {
 		"Scaffolding\\" : "vendor/gcsystem/scaffolding/src"
@@ -29,7 +29,7 @@ There are five actions and all except the first take one GET parameter : "entity
  - **update**
  - **delete**
 
-You can override all of these method to custom your administration
+You can override all of these methods to custom your administration
 
 Licence :
 -----------
