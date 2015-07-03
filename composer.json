@@ -1,0 +1,16 @@
+{
+	"name": "gcsystem/scaffolding",
+	"description": "GCsystem scaffolding plugin",
+	"keywords": ["framework", "gcsystem"],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"php": ">=5.5.12"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "3.1-dev"
+		}
+	}
+	"minimum-stability": "dev"
+}
