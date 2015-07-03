@@ -1,6 +1,6 @@
 {
 	"name": "gcsystem/scaffolding",
-	"description": "GCsystem scaffolding plugin",
+	"description": "GCsystem Framework scaffolding plugin",
 	"keywords": ["framework", "gcsystem"],
 	"license": "MIT",
 	"type": "project",
@@ -9,7 +9,12 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "3.1-dev"
+			"dev-master": "1.0-dev"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"Scaffolding\\" : "vendor/gcsystem/scaffolding/src"
 		}
 	},
 	"minimum-stability": "dev"
