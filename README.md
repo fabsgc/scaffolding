@@ -30,7 +30,7 @@ There are five actions and all except the first take one or two GET parameters :
  - **update**
  - **delete**
 
- You can override all of these methods to custom your administration
+You can override all of these methods to custom your administration
 
 Then for example create these routes :
 
