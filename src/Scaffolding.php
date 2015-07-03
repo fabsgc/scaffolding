@@ -12,15 +12,15 @@
 			return self::Template('.vendor/gcsystem/scaffolding/template/entity', 'scaffolding-entity')->show();
 		}
 
-		public function actionInsert($entity){
+		public function actionInsert($entity, $id){
 			return self::Template('.vendor/gcsystem/scaffolding/template/', 'scaffolding-insert')->show();
 		}
 
-		public function actionUpdate($entity){
+		public function actionUpdate($entity, $id){
 			return self::Template('.vendor/gcsystem/scaffolding/template/', 'scaffolding-update')->show();
 		}
 
-		public function actionDelete($entity){
+		public function actionDelete($entity, $id){
 			return self::Template('.vendor/gcsystem/scaffolding/template/', 'scaffolding-delete')->show();
 		}
 	}

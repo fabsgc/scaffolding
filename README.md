@@ -21,7 +21,7 @@ Installation :
 ```
 Then, create a new controller and change the `extends Controller` by `extends \Scaffolding\Scaffolding`
 
-There are five actions and all except the first take one GET parameter : "entity" (the entity name) : 
+There are five actions and all except the first take one or two GET parameter : "entity" (the entity name) and id (the primary key) : 
 
  - **home**
  - **entity**
