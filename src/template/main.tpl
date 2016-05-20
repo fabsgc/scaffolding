@@ -4,7 +4,7 @@
 		<title>Scaffolding</title>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/png" href="/{{path:IMAGE}}logo.png" />
-		<gc:asset type="css" files="web/gcs/css/default.css,web/gcs/css/profiler.css" cache="3600"/>
+		{gc:asset type="css" files="web/gcs/css/default.css,web/gcs/css/profiler.css" cache="3600"/}
 		<style type="text/css">
 			#main{
 				width: 100%;
@@ -24,7 +24,7 @@
 		</header>
 		<div id="main">
 			<div class="content">
-				<gc:child/>
+				{gc:child/}
 			</div>
 		</div>
 		<script type="text/javascript">
