@@ -1,1 +1,1 @@
-{gc:extends file=".vendor/gcsystem/scaffolding/src/template/main"/}
+{gc:extends file=".{VENDOR_PATH}gcsystem/scaffolding/src/template/main"/}
