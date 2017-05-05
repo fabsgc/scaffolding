@@ -1,13 +1,13 @@
 <?php
-	namespace Gcs\Scaffolding;
+	namespace Scaffolding;
 
-	use System\Controller\Controller;
-	use System\Template\Template;
+	use Gcs\Framework\Core\Controller\Controller;
+	use Gcs\Framework\Core\Template\Template;
 
 	/**
 	 * Class Scaffolding
 	 * @package Scaffolding
-	 * @Before(class="\Gcs\Scaffolding\Scaffolding", method="init")
+	 * @Before(class="\Scaffolding\Scaffolding", method="init")
 	 */
 
 	class Scaffolding extends Controller{
@@ -28,7 +28,7 @@
 		 * @param string $entity
 		 * @return string
 		 * @access public
-		 * @Routing(name="gcs.scaffolding.insert", url="/gcs/scaffolding/insert/([a-zA-Z]+)(/*)", vars="entity", method="get")
+		 * @Routing(name="gcs.scaffolding.insert", url="/gcs/scaffolding/insert/([a-zA-Z]+)(/*)", vars="Entity", method="get")
 		 */
 
 		public function actionInsert($entity){
@@ -41,11 +41,11 @@
 		 * @param string $entity
 		 * @return string
 		 * @access public
-		 * @Routing(name="gcs.scaffolding.insert-save", url="/gcs/scaffolding/insert/([a-zA-Z]+)(/*)", vars="entity", method="post")
+		 * @Routing(name="gcs.scaffolding.insert-save", url="/gcs/scaffolding/insert/([a-zA-Z]+)(/*)", vars="Entity", method="post")
 		 */
 
 		public function actionInsertSave($entity){
-			return (new Template('.' . VENDOR_PATH . 'gcsystem/scaffolding/src/template/entity', 'scaffolding-entity'))
+			return (new Template('.' . VENDOR_PATH . 'gcsystem/scaffolding/src/template/Entity', 'scaffolding-Entity'))
 				->assign('title', $entity.' - insert')
 				->show();
 		}
@@ -55,7 +55,7 @@
 		 * @param string $id
 		 * @return string
 		 * @access public
-		 * @Routing(name="gcs.scaffolding.update", url="/gcs/scaffolding/update/([a-zA-Z]+)/([0-9]+)(/*)", vars="entity,id", method="get")
+		 * @Routing(name="gcs.scaffolding.update", url="/gcs/scaffolding/update/([a-zA-Z]+)/([0-9]+)(/*)", vars="Entity,id", method="get")
 		 */
 
 		public function actionUpdate($entity, $id){
@@ -70,11 +70,11 @@
 		 * @param string $id
 		 * @return string
 		 * @access public
-		 * @Routing(name="gcs.scaffolding.update", url="/gcs/scaffolding/update/([a-zA-Z]+)/([0-9]+)(/*)", vars="entity,id", method="put")
+		 * @Routing(name="gcs.scaffolding.update", url="/gcs/scaffolding/update/([a-zA-Z]+)/([0-9]+)(/*)", vars="Entity,id", method="put")
 		 */
 
 		public function actionUpdateSave($entity, $id){
-			return (new Template('.' . VENDOR_PATH . 'gcsystem/scaffolding/src/template/entity', 'scaffolding-entity'))
+			return (new Template('.' . VENDOR_PATH . 'gcsystem/scaffolding/src/template/Entity', 'scaffolding-Entity'))
 				->assign('title', $entity)
 				->show();
 		}
@@ -84,7 +84,7 @@
 		 * @param string $id
 		 * @return string
 		 * @access public
-		 * @Routing(name="gcs.scaffolding.delete", url="/gcs/scaffolding/delete/([a-zA-Z]+)/([0-9]+)(/*)", vars="entity,id", method="get")
+		 * @Routing(name="gcs.scaffolding.delete", url="/gcs/scaffolding/delete/([a-zA-Z]+)/([0-9]+)(/*)", vars="Entity,id", method="get")
 		 */
 
 		public function actionDelete($entity, $id){
@@ -98,11 +98,11 @@
 		 * @param string $entity
 		 * @return string
 		 * @access public
-		 * @Routing(name="gcs.scaffolding.entity", url="/entity/([a-zA-Z]+)(/*)", method="get")
+		 * @Routing(name="gcs.scaffolding.Entity", url="/Entity/([a-zA-Z]+)(/*)", method="get")
 		 */
 
 		public function actionEntity($entity){
-			return (new Template('.' . VENDOR_PATH . 'gcsystem/scaffolding/src/template/entity', 'scaffolding-entity'))
+			return (new Template('.' . VENDOR_PATH . 'gcsystem/scaffolding/src/template/Entity', 'scaffolding-Entity'))
 				->assign('title', $entity)
 				->show();
 		}

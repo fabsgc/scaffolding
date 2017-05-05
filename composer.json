@@ -1,20 +1,12 @@
 {
 	"name": "gcsystem/scaffolding",
+	"description": "GCsystem Framework scaffolding plugin",
+	"keywords": ["framework", "gcsystem"],
 	"license": "MIT",
-    "type": "library",
-    "description": "GCsystem PHP Framework scaffolding plugin",
-    "keywords": ["framework", "gcsystem", "PHP"],
-    "authors": [
-        {
-            "name": "Fabien Beaujean",
-            "homepage": "https://github.com/fabsgc"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/fabsgc/gcsystem/issues",
-        "forum": "https://stackoverflow.com/tags/gcsystem",
-        "source": "https://github.com/fabsgc/gcsystem"
-    },
+	"type": "project",
+	"require": {
+		"php": ">=5.5.12"
+	},
 	"extra": {
 		"branch-alias": {
 			"dev-master": "1.0-dev"
