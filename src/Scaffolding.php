@@ -1,5 +1,5 @@
 <?php
-	namespace Scaffolding;
+	namespace Gcs\Scaffolding;
 
 	use Gcs\Framework\Core\Controller\Controller;
 	use Gcs\Framework\Core\Template\Template;
@@ -7,7 +7,7 @@
 	/**
 	 * Class Scaffolding
 	 * @package Scaffolding
-	 * @Before(class="\Scaffolding\Scaffolding", method="init")
+	 * @Before(class="\Gcs\Scaffolding\Scaffolding", method="init")
 	 */
 
 	class Scaffolding extends Controller{
